@@ -10,7 +10,7 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 app = Flask(__name__)
 Bootstrap(app)
 
-app.config['SECRET_KEY'] = 'mynewsecret'
+app.config['SECRET_KEY'] = ''
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///newone.db'
 db = SQLAlchemy(app)
 login_manager = LoginManager() #manages user sessions
